@@ -57,7 +57,7 @@ So what is the slope of our desired tangent? Well, the slope of the tangent must
 
 ![](/assets/img/INFINITESIMAL_CALCULUS/D.jpg)
 
-Two is such a real number, and it is easy to see that 2 is the only such number: Since $$0<\odot<r$$ for every real $$r>0$$, there can be no reals between 2 and $$2+\odot$$, and similarly, since $$-r<-\odot<0$$ for every real $$r>0$$, there can be no reals between $$2-\odot$$ and 2. Thus 2 is the only real number between $$2-\odot$$ and $$2+\odot$$, and so 2 must be out desired slope.
+Two is such a real number, and it is easy to see that 2 is the only such number: Since $$0<\odot<r$$ for every real $$r>0$$, there can be no reals between 2 and $$2+\odot$$, and similarly, since $$-r<-\odot<0$$ for every real $$r>0$$, there can be no reals between $$2-\odot$$ and 2. Thus 2 is the only real number between $$2-\odot$$ and $$2+\odot$$, and so 2 must be our desired slope.
 
 NICE!!!
 
