@@ -59,11 +59,17 @@ So what is the slope of our desired tangent? Well, the slope of the tangent must
 
 Two is such a real number, and it is easy to see that 2 is the only such number: Since $$0<\odot<r$$ for every real $$r>0$$, there can be no reals between 2 and $$2+\odot$$, and similarly, since $$-r<-\odot<0$$ for every real $$r>0$$, there can be no reals between $$2-\odot$$ and 2. Thus 2 is the only real number between $$2-\odot$$ and $$2+\odot$$, and so 2 must be out desired slope.
 
-For contrast, lets look at Newton-style proof that the slope is : For any $$\Delta x$$ the ratio $$\frac{\Delta y}{\Delta x}$$ is an approximation of the true slope of the curve.
+NICE!!!
+
+![](/assets/img/R.gif)
+
+For contrast, lets look at a Newton-style proof that the slope is 2: For any $$\Delta x$$ the ratio $$\frac{\Delta y}{\Delta x}$$ is an approximation of the true slope of the curve.
 
 ![](/assets/img/INFINITESIMAL_CALCULUS/E.jpg)
 
-As $$\Delta x$$ becomes smaller and smaller, the approximation improves, and the limit, as $$\Delta x$$ approaches zero, is the desidres slope. To be precise, if $$f(x)$$ is any function, we define **the limit** of $$f(x)$$, as x approaches a, equals b as follows:
+As $$\Delta x$$ becomes smaller and smaller, the approximation improves, and the limit, as $$\Delta x$$ approaches zero, is the desired slope. 
+
+To be precise, if $$f(x)$$ is any function, we define **the limit** of $$f(x)$$, as x approaches a, equals b as follows:
 
 $$\lim_{x\rightarrow a}{f(x)}=b$$.
 
@@ -71,9 +77,11 @@ And it reads:
 
 For all $$\epsilon>0$$, there is a $$\delta>0$$ such that whenever $$0<\vert x-a\vert<\delta$$, then $$\vert f(x)-b\vert<\epsilon$$.
 
-To apply this, we first define a function $$m(\Delta x)=\frac{\Delta y}{\Delta x}$$. By calculations we find that. given $$\Delta x$$, $$\Delta y$$ is 2$$\Delta x+(\Delta x)^2$$. Thus
+To apply this, we first define a function $$m(\Delta x)=\frac{\Delta y}{\Delta x}$$. By calculations we find that given $$\Delta x$$,
 
-$$m(\Delta x)=\frac{2\Delta x+(\Delta x)^2}{\Delta x}$$.
+$$\Delta y$$ is 2$$\Delta x+(\Delta x)^2$$. 
+
+Thus $$m(\Delta x)=\frac{2\Delta x+(\Delta x)^2}{\Delta x}$$.
 
 Finally we prove that according to the definition of limit,
 
@@ -83,8 +91,12 @@ That is, for every $$\epsilon>0$$, there is a $$\delta>0$$ such that whenever
 
 $$0<\vert\Delta x-0\vert<\delta$$ then $$\left\vert\frac{2\Delta x-(\Delta x)^2}{\Delta x}\right\vert<\epsilon$$
 
-The proof as follows: Suppose $$\epsilon>0$$ is given. Then let $$\delta$$ equal $$\epsilon$$. We now check that is $$\delta$$ works: if $$0<\left\vert\Delta x-0\right\vert<\delta$$, then
+The proof goes as follows: Suppose $$\epsilon>0$$ is given. Then let $$\delta$$ equal $$\epsilon$$. We now check that this $$\delta$$ works: 
 
-$$\left\vert\frac{2\Delta x-(\Delta x)^2}{\Delta x}-2\right\vert=\vert2+\Delta x -2\vert=\vert\Delta x\vert=\vert\Delta x-0\vert<\delta=\epsilon$$ $$\square$$
+if $$0<\left\vert\Delta x-0\right\vert<\delta$$, then
+
+$$\left\vert\frac{2\Delta x-(\Delta x)^2}{\Delta x}-2\right\vert$$
+
+$$=\vert2+\Delta x -2\vert=\vert\Delta x\vert=\vert\Delta x-0\vert<\delta=\epsilon$$ $$\square$$
 
 Notice that if $$\Delta x$$ actually equals zero, then $$\Delta y=0$$ too and $$m(0)=\frac{0}{0}$$, which is undefined.
