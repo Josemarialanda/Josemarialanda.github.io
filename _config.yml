@@ -20,8 +20,8 @@ permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'The doughnut shop'
-description:	       'Topology and other interesting stuff'
+title:		           'The State Monad'
+description:	       'Math and programming stuff'
 author:              'José María Landa Chávez'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
