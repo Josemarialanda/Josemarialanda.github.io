@@ -2,8 +2,8 @@
 layout: post
 title: "Calculus without limits"
 author: "José María Landa Chávez"
-categories: journal
-tags: [documentation,sample]
+categories: Math
+tags: [calculus,analysis]
 image: INFINITESIMAL_CALCULUS.png
 ---
 
@@ -61,7 +61,7 @@ Two is such a real number, and it is easy to see that 2 is the only such number:
 
 NICE!!!
 
-![](/assets/img/R.gif)
+![](/assets/img/F.gif)
 
 For contrast, lets look at a Newton-style proof that the slope is 2: For any $$\Delta x$$ the ratio $$\frac{\Delta y}{\Delta x}$$ is an approximation of the true slope of the curve.
 
