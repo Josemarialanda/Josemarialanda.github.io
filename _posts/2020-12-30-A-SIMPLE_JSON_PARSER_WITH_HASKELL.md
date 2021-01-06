@@ -80,7 +80,7 @@ newtype Parser a = Parser { runParser :: String -> Maybe (String, a) }
 The type of `Parser` is:
 
 ```haskell
-Parser :: (String -> Maybe (String, a)) -> Parser a
+Parser :: (String -> Maybe (String, a)) -> Parser a
 ```
 
 That is, in order to construct a `Parser` type we need to supply a function that thakes in a string and maybe returns a tuple `(String, a))`.
@@ -187,7 +187,7 @@ NOTE: In order to use `sequenceA` we must import `Control.Applicative`.
 sequenceA :: (Traversable t, Applicative f) => t (f a) -> f (t a)
 ```
 
-`sequenceA` takes a **Functor** type wrapped in a **Traversable** type and returns a **Functor** type wrapped in a **Traversable** type. In our case, `[]` is our Traversable type. We need only make `Parser` an instance of the Applicative**typeclass**, and we can take advantage of `sequenceA`.
+`sequenceA` takes a **Functor** type wrapped in a **Traversable** type and returns a **Functor** type wrapped in a **Traversable** type. In our case, `[]` is our Traversable type. We need only make `Parser` an instance of the Applicative **typeclass**, and we can take advantage of `sequenceA`.
 
 Taking a look at the Applictive typeclass we can see that in order to make `Parser` an instance of Applicative it must first implement Functor.
 
@@ -213,7 +213,7 @@ instance Functor Parser where
 
 What this is basically doing is telling Hsakell how to look inside our wrapped type `Parser a`, apply a function `f` to `a` and return `Parser (f a)`. 
 
-I highly recommend you check out [Functors, Applicatives, And Monads In Pictures]([Functors, Applicatives, And Monads In Pictures - adit.io](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)) to gain a deeper understanding of Functors and Monads.
+I highly recommend you check out [Functors, Applicatives, And Monads In Pictures](https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) to gain a deeper understanding of Functors and Monads.
 
 **Example:**
 
@@ -226,7 +226,7 @@ parser' :: Parser Int -- is now a parser that parses Ints
 parser' = fmap ord parser -- ord :: Char -> Int
 ```
 
-Now doing `runParser parser` with `"hello"` yields ` Just ("ello",104)`.
+Now doing `runParser parser` with `"hello"` yields `Just ("ello",104`.
 
 We can now make `Parser` an instance of Applicative:
 
@@ -247,11 +247,9 @@ instance Applicative Parser where
 
 Step by step:
 
-1. The first parser `p1` returns a function f and the next string input `input'`.
+1. The first parser `p1` returns a function f and the next string input `input'`.
 
-2. Then we take `input'` and feed it into parser `p2` which returns `input''` and a
-   
-   parsed item `a`.
+2. Then we take `input'` and feed it into parser `p2` which returns `input''` and a parsed item `a`.
 
 3. Finally we return `input''` and `f a`.
 
@@ -272,7 +270,9 @@ Recall the type of `sequenceA`,
 
 `sequenceA :: (Traversable t, Applicative f) => t (f a) -> f (t a)`.
 
-Lists are Traversable and our parsers are Applicatives! Thus, we can use `sequenceA`and obtain a parser of strings from a list of parsers.
+Lists are Traversable and our parsers are Applicatives!
+Thus, we can use `sequenceA` and obtain a parser of strings
+from a list of parsers.
 
 ```haskell
 *Main> f1 = (sequenceA . map charP) "hello"
@@ -304,7 +304,7 @@ jsonBool :: Parser JsonValue
 jsonBool = ...
 ```
 
-Since we need now parse not only one, but two sequences of characters, we must first try to parse `"true"` and if that fails try and parse `"false"`, if that also fails, we return `Nothing`. i.e we want to combine two parsers into a single parser that tries for `"true"` and `"false"` in sequence and picks the one that is successful.
+Since we need now parse not only one, but two sequences of characters, we must first try to parse `"true"` and if that fails try and parse `"false"`, if that also fails, we return `Nothing`. ie we want to combine two parsers into a single parser that tries for `"true"` and `"false"` in sequence and picks the one that is successful.
 
 We can use the Alternative (in `Control.Applicative`) typeclass to acheive this:
 
@@ -375,28 +375,17 @@ jsonNumber = f <$> notNull (spanP isDigit)
 
 We now want to parse string literals of the form `\"hello\"`.
 
-We need to check when a string starts and when a string ends. A string starts with `"` and ends with another `"`. Everything in between is our desired string literal. 
+We need to check when a string starts and when a string ends A string starts with `"` and ends with another `"`. Everything in between is our desired string literal. 
 
 ```haskell
 stringLiteral :: Parser String
 stringLiteral = (charP '"' *> spanP (/= '"') <* charP '"')
 ```
+Since we want to ignore the `"` at the begninning and at the end of a string we need to first parse these and discard them, leaving us with only the string literal Parser. This can be acheived with `*>` and `<*` which are methods in applicative:
 
-Since we want to 
+* `(<*) :: Applicative f => f a -> f b -> f a`
 
-
-
-
-
-
-
-Since we want to ignore the `"` at the begninning and at the end of a string we need to first parse these and discard them, leaving us with only the string literal Parser. This can be acheived with *> and <* which are methods in applicative:
-
-
-
-(<*) :: Applicative f => f a -> f b -> f a
-
-(*>) :: Applicative f => f a -> f b -> f b
+* `(*>) :: Applicative f => f a -> f b -> f b`
 
 These function chain parsers but discard the result of the parsers.
 
@@ -434,7 +423,7 @@ many :: Alternative f => f a -> f [a]
 
 `many` function takes an Alternative `f a` and returns an Alternative `f [a]`.
 
-`many` goes on (it repeatedly applies the parser) until it reaches an empty element (empty = Parser $ \_ -> Nothing)
+`many` goes on (it repeatedly applies the parser) until it reaches an empty element `(empty = Parser $ \_ -> Nothing)`.
 
 some and many can be defined as:
 
