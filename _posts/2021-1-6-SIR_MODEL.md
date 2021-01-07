@@ -207,7 +207,9 @@ There are three possible stability scenarios:
 
 We define the following sets:
 
-* $\mathbb{OCT}_1=\{(s,i,r)\in\mathbb{R}^3 | s,i,r > 0\}$ is octant 1.
+$\texttt{\{dsfgdg}\texttt{\}}$ 
+
+* $\mathbb{OCT}_1=\{(s,i,r)\in\mathbb{R}^3 | s,i,r > 0 \}$ is octant 1.
 
 * $\mathbb{PL_{si}}=\{(s,i,r)\in\mathbb{R}^3 | s,i > 0, r = 0\}$ is the positive plane $s-i$.
 
