@@ -7,10 +7,6 @@ tags: [programming,haskell]
 image: A_SIMPLE_PARSER_WITH_HASKELL.png
 ---
 
-**Parsing** (also called syntactic analysis) is one of the most developed branches of computer science. Parsers are used extensively in a number of disciplines: compiler construction, artificial intelligence (NLP), in linguistics and many more.
-
-Parsing is the process of structuring a linear representation in accordance with a given **grammar**. Today we will be defining a simple grammar for the **JSON** language. 
-
 We begin by defining the grammar for JSON:
 
 ```haskell
