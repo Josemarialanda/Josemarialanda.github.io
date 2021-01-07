@@ -207,19 +207,17 @@ There are three possible stability scenarios:
 
 We define the following sets:
 
-$\texttt{\{dsfgdg}\texttt{\}}$ 
+* $\mathbb{OCT}_1=\texttt{\{}(s,i,r)\in\mathbb{R}^3 | s,i,r > 0 \texttt{\}}$ is octant 1.
 
-* $\mathbb{OCT}_1=\{(s,i,r)\in\mathbb{R}^3 | s,i,r > 0 \}$ is octant 1.
+* $\mathbb{PL_{si}}=\texttt{\{}(s,i,r)\in\mathbb{R}^3 | s,i > 0, r = 0\texttt{\}}$ is the positive plane $s-i$.
 
-* $\mathbb{PL_{si}}=\{(s,i,r)\in\mathbb{R}^3 | s,i > 0, r = 0\}$ is the positive plane $s-i$.
+* $\mathbb{PL_{sr}}=\texttt{\{}(s,i,r)\in\mathbb{R}^3 | s,r > 0, i = 0\texttt{\}}$ is the positive plane $s-r$.
 
-* $\mathbb{PL_{sr}}=\{(s,i,r)\in\mathbb{R}^3 | s,r > 0, i = 0\}$ is the positive plane $s-r$.
+* $\mathbb{AX_{s}}=\texttt{\{}(s,i,r)\in\mathbb{R}^3 | i,r > 0, s = 0\texttt{\}}$ is the positive plane $i-r$.
 
-* $\mathbb{AX_{s}}=\{(s,i,r)\in\mathbb{R}^3 | i,r > 0, s = 0\}$ is the positive plane $i-r$.
+* $\mathbb{AX_{i}}=\texttt{\{}(s,i,r)\in\mathbb{R}^3 | s,r = 0, i > 0\texttt{\}}$ is the positive axis $i$.
 
-* $\mathbb{AX_{i}}=\{(s,i,r)\in\mathbb{R}^3 | s,r = 0, i > 0\}$ is the positive axis $i$.
-
-* $\mathbb{AX_{r}}=\{(s,i,r)\in\mathbb{R}^3 | s,i = 0, r > 0\}$ is the positive axis $r$.
+* $\mathbb{AX_{r}}=\texttt{\{}(s,i,r)\in\mathbb{R}^3 | s,i = 0, r > 0\texttt{\}}$ is the positive axis $r$.
 
 
 *Note:*
@@ -259,31 +257,32 @@ These are those curves that define those points of velocity zero:
 
 These curves define 4 subsets in the set $\mathbb{PL_{si}}$:
 
-* $\mathbb{A}_1=\{(s,i)\in\mathbb{R}^2 | s>\frac{\gamma+\mu}{\beta},i>\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\}$
+* $\mathbb{A}_1=\texttt{\{}(s,i)\in\mathbb{R}^2 | s>\frac{\gamma+\mu}{\beta},i>\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\texttt{\}}$
 
-* $\mathbb{A}_2=\{(s,i)\in\mathbb{R}^2 | s<\frac{\gamma+\mu}{\beta},i>\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\}$
+* $\mathbb{A}_2=\texttt{\{}(s,i)\in\mathbb{R}^2 | s<\frac{\gamma+\mu}{\beta},i>\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\texttt{\}}$
 
-* $\mathbb{A}_3=\{(s,i)\in\mathbb{R}^2 | s<\frac{\gamma+\mu}{\beta},i<\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\}$
+* $\mathbb{A}_3=\texttt{\{}(s,i)\in\mathbb{R}^2 | s<\frac{\gamma+\mu}{\beta},i<\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\texttt{\}}$
 
-* $\mathbb{A}_4=\{(s,i)\in\mathbb{R}^2 | s>\frac{\gamma+\mu}{\beta},i<\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\}$
+* $\mathbb{A}_4=\texttt{\{}(s,i)\in\mathbb{R}^2 | s>\frac{\gamma+\mu}{\beta},i<\frac{\mu-\mu s}{\beta s},1>s>0, 1>i>0\texttt{\}}$
+
 
 We define the set $\mathbb{B}=\mathbb{L}^º$, with $\mathbb{L}=\mathbb{L}_1\cup\mathbb{L}_2\cup\mathbb{L}_3\cup\mathbb{L}_4\cup\mathbb{L}_5$ being a closed curve.
 
-* $\mathbb{L}_1=\{\rho\left(t;\left(\frac{\beta}{\gamma + \mu},i_o\right)\right)\in \mathbb{R}^2 | \rho\left(t_{-1};\left(\frac{\beta}{\gamma + \mu},i_o\right)\right)=(0,i_{-1}),t\in[t_{-1}t_{0}]\}$
+* $\mathbb{L}_1=\texttt{\{}\rho\left(t;\left(\frac{\beta}{\gamma + \mu},i_o\right)\right)\in \mathbb{R}^2 | \rho\left(t_{-1};\left(\frac{\beta}{\gamma + \mu},i_o\right)\right)=(0,i_{-1}),t\in[t_{-1}t_{0}]\texttt{\}}$
 
-* $\mathbb{L}_2=\{(s,i)\in\mathbb{R}^2 | i=i_o, s\in\left[\frac{\beta}{\gamma + \mu},\frac{\mu}{i_o\beta+\mu}\right]\}$
+* $\mathbb{L}_2=\texttt{\{}(s,i)\in\mathbb{R}^2 | i=i_o, s\in\left[\frac{\beta}{\gamma + \mu},\frac{\mu}{i_o\beta+\mu}\right]\texttt{\}}$
 
-* $\mathbb{L}_3=\{(s,i)\in\mathbb{R}^2 | s=\frac{\mu}{i_o\beta + \mu}_o, i\in\left[i_o,i_1\right]\}$
+* $\mathbb{L}_3=\texttt{\{}(s,i)\in\mathbb{R}^2 | s=\frac{\mu}{i_o\beta + \mu}_o, i\in\left[i_o,i_1\right]\texttt{\}}$
 
-* $\mathbb{L}_4=\{\rho\left(t;\left(\frac{\mu}{i_o\beta + \mu},i_o\right)\right)\in \mathbb{R}^2 | \rho\left(t_{1};\left(\frac{\mu}{i_o\beta + \mu},i_o\right)\right)=\left(\frac{\beta}{\gamma+\mu},i_2\right),t\in[t_{0}t_{1}]\}$
+* $\mathbb{L}_4=\texttt{\{}\rho\left(t;\left(\frac{\mu}{i_o\beta + \mu},i_o\right)\right)\in \mathbb{R}^2 | \rho\left(t_{1};\left(\frac{\mu}{i_o\beta + \mu},i_o\right)\right)=\left(\frac{\beta}{\gamma+\mu},i_2\right),t\in[t_{0}t_{1}]\texttt{\}}$
 
-* $\mathbb{L}_5=\{(s,i)\in\mathbb{R}^2 | i=i_2, s\in\left[0,\frac{\beta}{\gamma+\mu}\right]\}$
+* $\mathbb{L}_5=\texttt{\{}(s,i)\in\mathbb{R}^2 | i=i_2, s\in\left[0,\frac{\beta}{\gamma+\mu}\right]\texttt{\}}$
 
 with $i_0\in\left(0,\frac{\gamma+\mu}{\beta},i_q\in\left(\right(\frac{\gamma+\mu}{\beta},K\right)$
 
 Set $\mathbb{B}$ contains an equilibrium point in the hyperbolic case $\beta>\gamma+\mu \space \space \space (R_o>1)$. The Poincare- Bendixon theorem tells us that every orbit that starts in $\mathbb{B}$ will eventually end up in said equilibrium point.
 
-In the non hyperbolic case, observing the vector field defined by $\mathbb{A}_1$,$\mathbb{A}_2$ and $\mathbb{A}_3$ we can see that every orbit that has its origin in $\mathbb{A}_3$, later passes through $\mathbb{A}_2$ which in turn later passes through $\mathbb{A}_1$, crossing the nullclines transversally. Finally, every orbit in $\mathbb{A}_1$ es stable, therefore, in this case, the equilibrium $(1,0)$ is asymptotically stable with resepect to $\mathbb{PL_{si}}$.
+In the non hyperbolic case, observing the vector field defined by $\mathbb{A}_1$, $\mathbb{A}_2$ and $\mathbb{A}_3$ we can see that every orbit that has its origin in $\mathbb{A}_3$, later passes through $\mathbb{A}_2$ which in turn later passes through $\mathbb{A}_1$, crossing the nullclines transversally. Finally, every orbit in $\mathbb{A}_1$ es stable, therefore, in this case, the equilibrium $(1,0)$ is asymptotically stable with resepect to $\mathbb{PL}_{si}$.
 
 In the hyperbolic case $\beta<\gamma+\mu \space \space \space (R_o<1)$ $\mathbb{B}$ preserves the linear stability of the point $(1,0)$, that is, it is  asymptotically stable. In particular, every orbit that starts in $\mathbb{PL_{si}}$ will end up in this equilibrium.
 
