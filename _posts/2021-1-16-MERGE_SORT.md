@@ -9,7 +9,7 @@ image: MERGE_SORT.jpg
 
 *Lion tamer illustration by Jason Holley*
 
-Merge sort is a pretty efficient comparison-based sorting algorithm. Merge sort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
+Merge sort is a pretty efficient comparison-based sorting algorithm; It's a divide and conquer algorithm that was invented by John von Neumann in 1945.
 
 Conceptually, merge sort is actaully a pretty simple algorithm:
 
@@ -19,13 +19,13 @@ Conceptually, merge sort is actaully a pretty simple algorithm:
 
 ![](/assets/img/MERGE_SORT/A.png)
 
-A more hands on explanation of the algorithm can be easily found pretty much anywhere on the internet. [This](https://www.youtube.com/watch?v=JSceec-wEyw&ab_channel=GeeksforGeeks) video by *GeeksforGeeks* does a pretty good job explaining the algorithm with some nice animations.
+A more hands on explanation of the algorithm can easily be found pretty much anywhere on the internet. [This](https://www.youtube.com/watch?v=JSceec-wEyw&ab_channel=GeeksforGeeks) video by *GeeksforGeeks* does a pretty good job at explaining the algorithm with some nice animations.
 
-However, today's objective is of a deeper, more mathematical nature. Why does merge sort run in $\mathcal{O}(n\space log(n))$ (Worst-case performance).
+Today we will be answering one question. Why does merge sort run in $\mathcal{O}(n\space log(n))$ (Worst-case performance).
 
-It is easy to see from the previous diagram that the algorithm splits up the problem of sorting an array of n elements into a tree of sorted single elements. In each level of said tree some certain amount of work is performed. In order to understand how merge sort works and why it takes $n\space log(n)$ in the worst case we first have to know how much work is performed on each level of the tree.
+It is easily seen from the previous diagram that the algorithm splits up the problem of sorting an array of $n$ elements into a tree with $n$ leaves. In each level of said tree some certain amount of work is performed. In order to understand how merge sort works and why it takes precisely $n\space log(n)$ in the worst case we must first find out know how much work is performed on each level of the binary tree.
 
-So basically, our algorithm does two main things:
+So basically, our algorithm does two things:
 
 **splitting** and **merging**.
 
@@ -101,7 +101,7 @@ sortedArray = ( -1 0 1 2 3 6 )
 
 And this is our final sorted array.
 
-mergesort used $5 = n-1$ comparisons to merge two sorted sub-arrays. The is the wors case comparisons for the merge subroutine. $\mathcal{O}(n)$
+mergesort used $5 = n-1$ comparisons to merge two sorted sub-arrays. The is the worst case comparisons for the merge subroutine. $\mathcal{O}(n)$
 
 Now that we know the time complexity for the merge subroutine we can finally tackle the big boy merge sort. 
 
@@ -157,7 +157,7 @@ $$
 T(8)=2T\left(1\right)+2T\left(1\right)+2T\left(1\right)+2T\left(1\right)+4(1)+2(3)+(7)
 $$
 
-But since we know that $T(1)=0$, that is for an array of one element we need not compare the element to anything.
+But since we know that $T(1)=0$, that is for an array of one element we don't need to compare anything.
 
 $$
 0+0+0+0+4+6+7=17
@@ -165,11 +165,11 @@ $$
 
 17 total comparisons.
 
-It is important to notice that no actual work is done until the end of the algorithm when the merging takes place, that is, the splitting part of the algorithm doesn't do any comparisons.
+It's important to notice that no actual work is done until the last bit of the algorithm when the merging is performed, in other words, the splitting part of the algorithm doesn't do any comparisons.
 
 ## The General Case
 
-From the previous example we know that the only significant work that is done on each level is merging. We can show this as follows:
+From the previous example we know that the only significant work that is done on each level is merging. We can see this in the following diagram:
 
 ![](/assets/img/MERGE_SORT/B.jpg)
 
@@ -186,6 +186,8 @@ $$
 \sum^{log(n)-1}_{0}\left(n-2^{i}\right)=
 \sum^{log(n)-1}_{0}n-\sum^{log(n)-1}_{0}2^{i}
 $$
+
+Notice we're summing from 0 to $log(n)-1$ and not $log(n)$. This is because indexing in most programming languages start from zero. This way we sum from level zero to level $(n-1)$ where $n$ is the length of our array.
 
 $$
 \left[\left(log(n)-1-0\right)-1\right]n-(1+2+4+\dots 2^{log(n)-1})
