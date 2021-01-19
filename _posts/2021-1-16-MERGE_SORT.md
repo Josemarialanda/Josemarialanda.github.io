@@ -3,7 +3,7 @@ layout: post
 title: "Merge Sort"
 author: "José María Landa Chávez"
 categories: Programming
-tags: [algorithms, sorting]
+tags: [algorithms, sorting, programming]
 image: MERGE_SORT.jpg
 ---
 

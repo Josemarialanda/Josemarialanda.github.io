@@ -3,7 +3,7 @@ layout: post
 title: "CIS 194: Homework 5"
 author: "José María Landa Chávez"
 categories: Programming
-tags: [haskell]
+tags: [haskell, programming]
 image: CIS194_HOMEWORK_5.jpeg
 ---
 

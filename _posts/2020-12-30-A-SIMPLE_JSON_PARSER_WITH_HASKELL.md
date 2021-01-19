@@ -3,7 +3,7 @@ layout: post
 title: A Simple JOSN Parser with Haskell
 author: "José María Landa Chávez"
 categories: Programming
-tags: [programming,haskell]
+tags: [programming, haskell]
 image: A_SIMPLE_PARSER_WITH_HASKELL.png
 ---
 
