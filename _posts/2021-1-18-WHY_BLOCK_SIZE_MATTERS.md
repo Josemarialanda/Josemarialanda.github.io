@@ -35,7 +35,7 @@ Despite numerous efforts on his behalf, nothing was done to increase the block s
 
 ## BIP101
 
-BIP101 was a Bitcoin Improvement Proposal that proposed the maximum block size be raised to 8 MB as of Jan. 11, 2016, before increasing linearly to double every 730 days until January 2036. This proposal was well received bu the public. The 8 MB limit was estimated to be able to facilitate the processing of 24 transactions per second. However, consensus wasn't reached; the Bitcoin community remained divided on the issue of block size. Bram Cohen, the creator of the famous torrent client Bittorrent, argued in favor of transactions fees being determined by market forces amid the maintenance of the 1 MB block limit:
+BIP101 was a Bitcoin Improvement Proposal that proposed the maximum block size be raised to 8 MB as of Jan. 11, 2016, before increasing linearly to double every 730 days until January 2036. This proposal was well received by the community. The 8 MB limit was estimated to be able to facilitate the processing of 24 transactions per second. However, consensus wasn't reached; the Bitcoin community remained divided on the issue of block size. Bram Cohen, the creator of the famous torrent client Bittorrent, argued in favor of transactions fees being determined by market forces amid the maintenance of the 1 MB block limit:
 
 > “The proposed ‘solution’ to the ‘problem’ of hitting the transaction rate limit is to raise the limit from 1 megabyte to 20 megabytes. This sort of change flies directly in the face of the ethos of Bitcoin.”
 
