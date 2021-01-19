@@ -4,7 +4,7 @@ title: "Why Block Size Matters"
 author: "José María Landa Chávez"
 categories: Blockchain, cryptocurrency
 tags: [blockchain, cryptocurrency, bitcoin]
-image: WHY_BLOCK_SIZE_MATTERS.jpg
+image: WHY_BLOCK_SIZE_MATTERS.png
 ---
 
 Bitcoin itself is already quite contraversial topic. But even within the Bitcoin community there is fiery debate as to what the size of a block should be.
