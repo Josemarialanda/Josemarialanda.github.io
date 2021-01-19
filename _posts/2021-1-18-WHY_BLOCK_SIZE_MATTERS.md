@@ -7,13 +7,13 @@ tags: [blockchain, cryptocurrency, bitcoin]
 image: WHY_BLOCK_SIZE_MATTERS.png
 ---
 
-Bitcoin itself is already quite contraversial topic. But even within the Bitcoin community there is fiery debate as to what the size of a block should be.
+Bitcoin itself is already quite a contraversial topic. But even within the Bitcoin community there is fiery debate as to what the size of a block should be.
 
 Block size is such a debated topic that it caused a split in the Bitcoin community some years back. Why does the size of a block even matter? TPS, or transactions per second. The quation of scale in bitcoin is not a new one. But as transaction volumes are expected to increase in the years ahead, users begin to worry their precious technology won't be able to keep up with newer cryptocurrencies. 
 
 ## What are Blocks
 
-Blocks are bundles of transactions which are confirmed and subsequently shared on the blockchain. In the early days of Bitcoin, Blocks had a storage capacity of precisely 36MB. However, this was changed in 2010 when the core Bitcoin developers made the decision to reduce block size to 36MB to reduce the threat of spam and potential [denial-of-service attacks](https://www.paloaltonetworks.com/cyberpedia/what-is-a-denial-of-service-attack-dos#:~:text=A%20Denial%2Dof%2DService%20(,information%20that%20triggers%20a%20crash.) on the network. 
+Blocks are bundles of transactions which are confirmed and subsequently shared on the blockchain. In the early days of Bitcoin, Blocks had a storage capacity of precisely 36MB. However, this was changed in 2010 when the core Bitcoin developers made the decision to reduce block size to 36MB to reduce the threat of spam and potential [denial-of-service attacks](https://en.wikipedia.org/wiki/Denial-of-service_attack) on the network. 
 
 In present year, 2021, the amount of data in each block is increasing, some blocks are even hitting this maximum of 1MB. This leads to capacity issues on the network and delayed confirmations which in turn leads to a low TPS coefficient. 
 
